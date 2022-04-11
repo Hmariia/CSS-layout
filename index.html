@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grids</title>
+    <link rel="stylesheet" type="text/css" href="CSS-layout/style.css">
+    <!--splits page on colums and rows-->
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 1em;
+            /*-- same as below
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            */
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper >div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Beagle on aktiivinen ja peloton, pääasiassa jänistä 
+            ajava, englantilaista alkuperää oleva metsästyskoira. 
+            Beagle on alun perin ajuemetsästykseen käytetty rotu, 
+            mutta esim. pohjoismaissa sitä käytetään lähes pelkästään yksin 
+            työskentelevänä koirana. Valtaosaa suomalaisista ja pohjoismaisista 
+            beagleista käytetään edelleen aktiivisesti metsästykseen.
+        </div>
+        <div>
+            Beagle on aktiivinen ja peloton, pääasiassa jänistä 
+            ajava, englantilaista alkuperää oleva metsästyskoira. 
+            Beagle on alun perin ajuemetsästykseen käytetty rotu, 
+            mutta esim. pohjoismaissa sitä käytetään 
+            lähes pelkästään yksin työskentelevänä koirana.
+        </div>
+        <div>
+            Beagle on aktiivinen ja peloton, pääasiassa jänistä 
+            ajava, englantilaista alkuperää oleva metsästyskoira. 
+            Beagle on alun perin ajuemetsästykseen käytetty rotu, 
+            mutta esim. pohjoismaissa sitä käytetään lähes pelkästään yksin 
+            työskentelevänä koirana. Valtaosaa suomalaisista ja pohjoismaisista 
+            beagleista käytetään edelleen aktiivisesti metsästykseen.
+        </div>
+        <div>
+            Beagle on aktiivinen ja peloton, pääasiassa jänistä 
+            ajava, englantilaista alkuperää oleva metsästyskoira. 
+            Beagle on alun perin ajuemetsästykseen käytetty rotu, 
+            mutta esim. pohjoismaissa sitä käytetään 
+            lähes pelkästään yksin työskentelevänä koirana.
+        </div>
+    </div>
+</body>
+</html>
